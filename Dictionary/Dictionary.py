@@ -1,7 +1,7 @@
 
 import json                                                             # This program will take a user input and give
 import os                                                               # a definition for the world. Includes suggestions        
-from difflib import get_close_matches                                   # for similar words. -Matthew Adams
+from difflib import get_close_matches                                   # for similar words.
 
 def main(word):
     data=json.load(open("data.json", 'r'))
