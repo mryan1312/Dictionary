@@ -13,6 +13,10 @@ def main(word):
             pass
         else:                                                           # Closing the working loop to exit the program
             working = False
+    elif word.title() in data:
+        print(data[word.title()])
+    elif word.upper() in data:
+        print(data[word.upper()])
     elif len(get_close_matches(word, data.keys())) > 0:                 # Check to see if number of alts > 0
         correct = get_close_matches(word, data.keys())[0]               # Returns the closest related word
         accept = input(f"Did you mean {str(correct)}? y or n\n")
